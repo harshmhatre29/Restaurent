@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_order_food.css">
+    <title>harsh</title>
+</head>
+<body>
+
+    <header>
+        <nav>            
+            <ul class="nav">
+                <div class="logo">
+                    <img src="../static/food3.jpg" alt="logo">
+                </div>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Order-food">Order Food</a></li> 
+                <li><a href="Review">Review</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <p class="tital_name">Order Food</p>
+
+            <div class="block1">
+            </div>
+
+            <form name="sentOrder" id="orderForm" action="/Order-food" method="post" novalidate>
+                <div class="f-group">
+                    <label class="dcpd" for="">Dish Category :</label>
+                    <select name="slct1" id="slct1" onchange=" populate(this.id, 'slct2')">
+                        <option value="">--choose food--</option>
+                        <option value="Veg-food">Veg food</option>
+                        <option value="Nonveg-food">Nonveg food</option>
+                        <option value="Special-dish">Special dishes</option>
+                    </select>
+                </div>
+
+                 <div class="f-group2">
+                    <label class="dpd" for="">Dish :</label>
+                    <select name="slct2" id="slct2"></select>
+                </div>
+
+                <div class="drinks">
+                    <label class="drpd" for="cars">Drinks :</label>
+                        <select name="drink" id="drink">
+                            <option value="">--choose drink--</option>
+                            <option value="Coco cola">Coco Cola</option>
+                            <option value="Thums-Up">Thums up</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Sprite">Sprite</option>
+                            <option value="lemon juice">lemon Juice</option>
+                            <option value="Mango juice">Mango Juice</option>
+                            <option value="frout bear">Frout Bear</option>
+                            <option value="icecreme soda">Icecreme Soda</option>
+                            <option value="string">String</option>
+                            <option value="blue beary">Blue Beary</option>
+                        </select>
+                </div>
+
+                <div class="t-no">
+                    <label class="tnpd" for="table">Select Table No :</label>
+                    <input class="tbr" type="number" id="table" name="table" min="1" max="20">
+                </div>
+
+                <div class="subrst">
+                    <button type="submit" onclick="myFunction()" class="btn" form="orderForm" id="sendOrderButton">Submit</button>      <!-- btn btn-primary   -->
+                </div>
+
+                <p class= "dem" id="demo"></p>
+
+                <p class="suc1">{{sucess1}}</p>             <!--Order send Sucessfully-->              
+            </form>
+
+
+            <script>
+                function populate(s1,s2)
+                {
+                    var s1 = document.getElementById(s1);
+                    var s2 = document.getElementById(s2);
+                    s2.innerHTML="";
+
+                    if(s1.value=="Veg-food")
+                    {
+                        var optionArray = ['muter punnir|Muter Punnir','usal|Usal','pav bhaji|Pav bhaji','misal|Misal','batata vada|Batata vada','masala channa|Masala Channa','pulav|Pulav','paneer makhani biryani|Paneer Makhani Biryani','aamras kikadhi|Aamras Ki Kadhi','dahi kabab|Dahi Kebab','mushroom kofta in tomato gravy|Mushroom Kofta in Tomato Gravy','stuffed baby eggplant|Stuffed Baby Eggplant'];
+                    }
+
+                    else if(s1.value=="Nonveg-food")
+                    {
+                        var optionArray = ['kolambi bhat|Kolambi Bhaat','chiken handi|Chiken Handi','chiken biryani|Chiken Biryani','kharda chiken|Kharda Chicken','dongri mutton|Dongri Mutton','karvari mutton|Karwari Mutton','saoji mutton|Saoji Mutton','vajadi|Vajadi','mutton fry thali|Mutton Fry Thali','varadhi chiken|Varhadi Chicken','mutton biryani|Mutton Biryani'];
+                    }
+
+                    else if(s1.value=="Special-dish")
+                    {
+                        var optionArray = ['butter chiken|Butter chicken','Biryani|Biryani','ananas menaskai|ananas menaskai','rajma|Rajma','palak paneer|Palak paneer','litti chokha|Litti chokha','gajar ka halwa|Gajar ka halwa','channa masala|Chana masala','chaat|Chaat','chiken tikka|Chicken Tikka','chiken razala|Chicken razala'];
+                    }
+
+                    for(var option in optionArray)
+                    {
+                        var pair = optionArray[option].split("|");
+                        var newoption = document.createElement("option");
+
+                        newoption.value = pair[0];
+                        newoption.innerHTML=pair[1];
+                        s2.options.add(newoption);
+                    }
+                }
+
+                function myFunction()
+                {
+                    document.getElementById("demo").innerHTML="Order Sent Sucessfully...";
+                }
+            </script>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>Copyrights &copy; 2023 Mhatre Restaurents. All rights reserved | Design By Harsh Mhatre</p>
+    </footer>
+</body>
+</html>

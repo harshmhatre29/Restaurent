@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_profile.css">
+    <title>harsh</title>
+</head>
+<body>
+    <p class="heading">Welcome Admin</p>                     <!-- {{name}} -->
+    
+    <div class="block1">
+        <p class="ord">Orders</p>
+        <table class="t1" border="3">
+            <tr>
+                <th>Sr.No</th>
+                <th>Dish Category</th>
+                <th>Dish</th>
+                <th>Drink</th>
+                <th>Table.No</th>
+            </tr>
+            {% for orders in ordersDetails %}
+            <tr>
+                <td>{{orders[0]}}</td>
+                <td>{{orders[1]}}</td>
+                <td>{{orders[2]}}</td>
+                <td>{{orders[3]}}</td>
+                <td>{{orders[4]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="midblock1"> </div>
+
+    <div class="block2">
+        <p class="rev">Reviews</p>
+        <table class="t2" border="1">
+            <tr>
+                <th>Sr.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Review</th>
+            </tr>
+            {% for review in reviewDetails %}
+            <tr>
+                <td>{{review[0]}}</td>
+                <td>{{review[1]}}</td>
+                <td>{{review[2]}}</td>
+                <td>{{review[3]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="midblock2"> </div>
+
+    <div class="logout">
+        <form action="/logout" method="post">
+            <input class="btn" type="submit" value="Logout">
+        </form>
+        <p class="foot">Copyrights &copy; 2023 Mhatre Restaurents. All rights reserved | Design By Harsh Mhatre</p>
+    </div>
+
+
+

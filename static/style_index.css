@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --------------------------------------------------------------- */
+
+
+.nav{
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 25px;
+    margin-right: -490px;
+}
+
+.logo img {
+    width: 20%;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    width: 65px;
+    height: 47px;
+    margin-right: 500px;
+    margin-top: -1px;
+}
+
+.nav li a{
+    color: white;
+    padding: 43px;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+
+
+
+.container{
+    height: 90vh;
+    /* background-color: rgb(13, 143, 67); */
+
+    background-image: url('background3.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* display: flex; */
+}
+
+.rest_name{
+    margin-left: 490px;
+    /* margin-top: 41px; */
+    font-size: 65px; 
+    color: rgb(217, 152, 227);
+    text-shadow: 2px 3px 5px rgb(17, 200, 164);
+    font-family: cursive;
+}
+
+.wlc{
+    margin-left: 490px;
+    margin-top: 14px;
+    font-size: 40px; 
+    color: whitesmoke;
+    text-shadow: 2px 3px 5px rgb(17, 200, 164);
+    font-family: cursive;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+footer{
+    height: 20vh;
+    background-color: black;  
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+}
+
+p{
+    color: white;
+}

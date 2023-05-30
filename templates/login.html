@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_login.css">
+    <title>harsh</title>
+</head>
+
+
+<header>
+    <nav>            
+        <ul class="nav">
+            <div class="logo">
+                <img src="../static/food3.jpg" alt="logo">
+            </div>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Order-food">Order Food</a></li> 
+            <li><a href="Review">Review</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Login">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <div class="container">
+        <p class="tital_name">Login</p>
+
+        <div class="block1">
+            <form action="/form_login" method="post">
+                <label class="user_name" for="user_name">User Name :</label>
+                <input class="box1" type="text" name='username'>
+
+                <label class="passw" for="passw">Password :</label>
+                <input class="box2"  name='password' >
+
+                <input class="btn" type="submit" value="Login">
+            </form>
+        </div>
+        <p class="error">{{info}}</p>
+    </div>
+
+</main>
+
+
+<footer>
+    <p>Copyrights &copy; 2023 Mhatre Restaurents. All rights reserved | Design By Harsh Mhatre</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_index.css">
+    <title>harsh</title>
+</head>
+<body>
+
+    <header>
+        <nav> 
+            
+            <ul class="nav">
+                <div class="logo">
+                    <img src="../static/food3.jpg" alt="logo">
+                </div>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Order-food">Order Food</a></li> 
+                <li><a href="Review">Review</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <p class="rest_name">Mhatre Restaurents</p>
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="../static/sideshow1.jpeg" style="width:92%; height:375px; margin-top:20px; margin-left: 64px; border-radius: 10px">   <!--https://www.pexels.com/search/food/-->
+                <img class="mySlides" src="../static/sideshow2.jpeg" style="width:92%; height:375px; margin-top:20px; margin-left: 64px; border-radius: 10px">
+                <img class="mySlides" src="../static/sideshow3.jpeg" style="width:92%; height:375px; margin-top:20px; margin-left: 64px; border-radius: 10px">
+            </div>
+            <p class="wlc">Welcome to Our Restaurent!</p>
+        </div>
+        
+        <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); // Change image every 3 seconds
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>Copyrights &copy; 2023 Mhatre Restaurents. All rights reserved | Design By Harsh Mhatre</p>
+    </footer>
+</body>
+</html>

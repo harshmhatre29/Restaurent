@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --------------------------------------------------------------- */
+
+
+.nav{
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 25px;
+    margin-right: -490px;
+}
+
+.logo img {
+    width: 20%;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    width: 65px;
+    height: 47px;
+    margin-right: 500px;
+    margin-top: -1px;
+}
+
+.nav li a{
+    color: white;
+    padding: 43px;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+
+.container{
+    height: 90vh;
+    /* background-color: rgb(13, 143, 67); */
+    background-image: url('background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.tital_name{
+    margin-left: 698px;
+    /* margin-top: 41px; */
+    font-size: 65px; 
+    color: rgb(217, 152, 227);
+    text-shadow: 2px 3px 5px rgb(17, 200, 164);
+    font-family: cursive;
+}
+
+.block1{
+    width: 500px;
+    height: 340px;
+    background-color: rgba(255, 255, 255, 0.367);
+    margin-top: 133px;
+    margin-left: -315px;
+    display: flex;
+    border-radius: 35px;
+}
+
+.user_name{
+    margin-left: 41px;
+    margin-top: 50px;
+    font-size: 24px;
+    color: rgb(8, 1, 0);
+    font-weight: 600;
+}
+
+.box1{
+    height: 37px;
+    width: 220px;
+    border-radius: 20px;
+    margin-top: 73px;
+    margin-left: 14px;
+    padding-left: 10px;
+}
+
+.passw{
+    margin-left: 56px;
+    margin-top: 50px;
+    font-size: 24px;
+    color: rgb(8, 1, 0);
+    font-weight: 600;
+}
+
+.box2{
+    height: 37px;
+    width: 220px;
+    border-radius: 20px;
+    margin-top: 34px;
+    margin-left: 16px;
+    padding-left: 10px;
+}
+
+
+.btn{
+    margin-left: 257px;
+    margin-top: 40px;
+    width: 72px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.error{
+    margin-top: 406px;
+    margin-left: -312px;
+    color: red;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+footer{
+    height: 20vh;
+    background-color: black;  
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+}
+
+p{
+    color: white;
+}

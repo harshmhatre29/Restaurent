@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style_review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--for contact icons "call,mail, globe"-->
+    <title>harsh</title>
+</head>
+<body>
+
+    <header>
+        <nav>            
+            <ul class="nav">
+                <div class="logo">
+                    <img src="../static/food3.jpg" alt="logo">
+                </div>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Order-food">Order Food</a></li> 
+                <li><a href="Review">Review</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <div class="container">
+            <p class="tital_name">Review and Contact</p>
+
+            <div class="container2">
+                <div class="block1">
+                    <div class="t1">Review</div>
+                    <form name="sentReview" id="reviewForm" action="/Review" method="post" novalidate>
+                        <div class="nm">
+                            <label class="nm2" for="name">Name :</label>
+                            <input class="box1" type="text" id="name" name="name">
+                        </div>
+
+                        <div class="eid">
+                            <label class="eid2" for="mail">E-mail ID :</label>
+                            <input class="box2" type="email" id="mail" name="mail">
+                        </div>
+
+                        <div class="rev2">
+                            <label class="rev3" for="review">Review :</label>
+                            <textarea class="box3" id="review" name="review" rows="4" cols="50"></textarea>
+                        </div>
+
+                        <div class="subrst">
+                            <button type="submit" onclick="myFunction()" class="btn" form="reviewForm" id="sendReviewButton">Submit</button>        <!-- btn btn-primary -->
+                        </div>
+
+                        <p class= "dem" id="demo"></p>
+
+                        <p class="suc1">{{sucess1}}</p>            <!-- Review send Sucessfully -->
+                    </form>
+                </div>
+
+                <div class="block2">
+                    <div class="t2">Contact Us</div>
+
+                    <i class="fa fa-envelope" style="font-size:36px; margin-left: -280px; margin-top: 115px; color:black"></i>
+                    <p class="cont1">mhatrerestaurent@gmail.com</p>
+
+                    <i class="fa fa-phone" style="font-size:36px; margin-left: -343px; margin-top: 189px; color:black"></i>
+                    <p class="cont2">+91-7821045768</p>
+
+                    <i class="fa fa-globe" style="font-size:36px; margin-left: -229px; margin-top: 268px; color:black"></i>
+                    <p class="cont3">www.mhatrerestaurent.com</p>
+                </div>
+            </div>
+
+            <script>
+                function myFunction()
+                {
+                    document.getElementById("demo").innerHTML="Review Sent Sucessfully...";
+                }
+            </script>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <p>Copyrights &copy; 2023 Mhatre Restaurents. All rights reserved | Design By Harsh Mhatre</p>
+    </footer>
+</body>
+</html>

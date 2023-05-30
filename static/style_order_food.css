@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --------------------------------------------------------------- */
+
+
+.nav{
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 25px;
+    margin-right: -490px;
+}
+
+.logo img {
+    width: 20%;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    width: 65px;
+    height: 47px;
+    margin-right: 500px;
+    margin-top: -1px;
+}
+
+.nav li a{
+    color: white;
+    padding: 43px;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+
+.container{
+    height: 90vh;
+    /* background-color: rgb(13, 143, 67); */
+    background-image: url('background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+}
+
+.tital_name{
+    margin-left: 571px;
+    /* margin-top: 41px; */
+    font-size: 65px; 
+    color: rgb(217, 152, 227);
+    text-shadow: 2px 3px 5px rgb(17, 200, 164);
+    font-family: cursive;
+}
+
+.block1{
+    background-color: rgba(255, 255, 255, 0.367);
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.f-group{
+    padding-bottom: 50px;
+    margin-top: -461px;
+}
+
+select{      /* for all select tag */
+    border: 1px solid #555;
+    height: 40px;
+    width: 200px;
+    padding: 0 37px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.f-group2{
+    padding-bottom: 50px;
+}
+
+.t-no{
+    padding-bottom: 30px;
+}
+
+.drinks{
+    padding-bottom: 50px;
+}
+
+.dcpd{
+    margin-left: 582px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.dpd{
+    margin-left: 624px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.drpd{
+    margin-left: 612px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.tnpd{
+    margin-left: 612px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.subrst{
+    margin-left: 720px;
+    font-size: 25px;
+}
+
+.tbr{
+    border-radius: 5px;
+    height: 24px;
+    margin-left: 6px;
+}
+
+.btn{
+    width: 72px;
+    height: 24px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+.suc1{
+    margin-left: 681px;
+    margin-top: 11px;
+    color: yellow;
+    transition: all 2s;
+}
+
+
+.dem{
+    margin-left: 681px;
+    margin-top: 11px;
+    color: yellow;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+footer{
+    height: 20vh;
+    background-color: black;  
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+}
+
+p{
+    color: white;
+}
